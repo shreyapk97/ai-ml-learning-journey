@@ -1,0 +1,58 @@
+# Train/Test Split
+
+Machine learning models should be evaluated on data they have not seen before.
+
+Dataset is typically split into:
+
+- Training Set: Used to learn patterns
+- Test Set: Used to evaluate performance
+
+Example:
+
+1000 rows with test_size = 0.2
+
+- Training rows = 800
+- Test rows = 200
+
+Purpose:
+To verify whether the model can generalize to unseen data.
+
+# Linear Regression (Intuition)
+
+Linear Regression is used when predicting continuous numerical values.
+
+Examples:
+
+- Experience → Salary
+- House Size → House Price
+- Hours Studied → Exam Score
+
+The model learns a best-fit line through the data and uses that line to make predictions.
+
+Example:
+
+Hours Studied | Score
+------------- | -----
+1             | 40
+2             | 50
+3             | 60
+4             | 70
+
+Prediction:
+
+5 hours studied → approximately 80 marks
+
+# Prediction Error
+
+Error = Actual - Predicted
+
+Example:
+
+Actual Price = 100
+Predicted Price = 90
+
+Error = 10
+
+Goal of Linear Regression:
+
+Find a line that minimizes overall prediction error.
